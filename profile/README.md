@@ -4,7 +4,7 @@
 
 ## 🚀 Sobre el Proyecto
 
-RetroGameCloud es una plataforma moderna para jugar juegos clásicos de DOS directamente en el navegador. Utiliza tecnologías cloud-native, contenedores Docker, y orquestación con Kubernetes para ofrecer una experiencia escalable y de alto rendimiento.
+Retro Game Hub es una plataforma moderna para jugar juegos clásicos de DOS directamente en el navegador. Utiliza tecnologías cloud-native, contenedores Docker, y orquestación con Kubernetes para ofrecer una experiencia escalable y de alto rendimiento.
 
 ## 🏗️ Arquitectura
 
@@ -81,22 +81,7 @@ cp .env.example .env
 docker-compose -f docker-compose.prod.yml up -d
 ```
 
-Accede a: **http://localhost:8000**
-
-### Kubernetes
-
-```bash
-# Clonar manifiestos
-git clone https://github.com/retrogamecloud/kubernetes.git
-cd kubernetes
-
-# Aplicar configuración
-kubectl apply -f namespace.yml
-kubectl apply -f secrets.yml
-kubectl apply -f deployments/
-kubectl apply -f services/
-kubectl apply -f ingress.yml
-```
+Accede a: **http://localhost:8081**
 
 ## 🔐 Seguridad
 
@@ -122,9 +107,6 @@ kubectl apply -f ingress.yml
 - 🐳 [Docker Hub - retrogamehub](https://hub.docker.com/u/retrogamehub)
 - 📦 [GitHub Packages](https://github.com/orgs/retrogamecloud/packages)
 - 🎮 [JS-DOS Documentation](https://js-dos.com/)
-
-## 📝 Licencia
-
 MIT License © 2025 RetroGameCloud
 
 ---
