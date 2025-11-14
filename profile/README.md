@@ -107,10 +107,6 @@ Accede a: **http://localhost:8081**
 - 🐳 [Docker Hub - retrogamehub](https://hub.docker.com/u/retrogamehub)
 - 📦 [GitHub Packages](https://github.com/orgs/retrogamecloud/packages)
 - 🎮 [JS-DOS Documentation](https://js-dos.com/)
-MIT License © 2025 RetroGameCloud
-
 ---
 
-<p align="center">
-  <strong>Desarrollado con ❤️ para la comunidad retro gaming</strong>
-</p>
+
