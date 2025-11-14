@@ -1,4 +1,4 @@
-# 🎮 RetroGameCloud
+# 🎮 Retro Game Hub
 
 > Plataforma de juegos retro en la nube con emulación de DOS vía JS-DOS
 
