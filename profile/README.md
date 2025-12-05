@@ -1,6 +1,5 @@
 # 🕹️ RetroGameCloud - Documentación General del Proyecto
 
-[![CI/CD Pipeline](https://github.com/retrogamecloud/.github/actions/workflows/main.yml/badge.svg)](https://github.com/retrogamecloud/.github/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Hosted on](https://img.shields.io/badge/Hosted%20on-AWS%20EKS-orange)](https://aws.amazon.com/eks/)
 
