@@ -21,8 +21,8 @@
 - [Seguridad](#seguridad)
 - [Monitoreo y Observabilidad](#monitoreo-y-observabilidad)
 - [Estimación de Costos AWS](#estimación-de-costos-aws)
-- [Licencia](#licencia)
 - [Enlaces Útiles](#enlaces-útiles)
+- [Equipo](#equipo)
 
 ---
 
@@ -599,12 +599,6 @@ RetroGameCloud maneja múltiples secretos en diferentes niveles. **Nunca commite
 
 ---
 
-## Licencia
-
-Este proyecto está bajo licencia **MIT**. Ver [`LICENSE`](./LICENSE) para detalles.
-
----
-
 ## Enlaces Útiles
 
 - **Aplicación:** https://retrogamehub.games
@@ -613,14 +607,16 @@ Este proyecto está bajo licencia **MIT**. Ver [`LICENSE`](./LICENSE) para detal
 
 ---
 
-## Integrantes
+## Equipo
 
-- **Evaristo Garcia Zambrana - evaristogz** 
-- **José Maria Palenzuela - jpalenz77**
-- **Miguel Ángel Narvaiz - naesman1** 
+### Evaristo García Zambrana
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/EvaristoGZ)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/evaristogz/)
 
----
+### José María Palenzuela
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jpalenz77)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/josemariapalenzuelaplaza/)
 
-**Última actualización:** 1 de diciembre de 2025  
-**Versión del Proyecto:** 1.0.0  
-**Estado:** En Desarrollo
+### Miguel Ángel Narvaiz
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/naesman1)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/miguel-narvaiz/)
