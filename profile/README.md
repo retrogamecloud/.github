@@ -1,6 +1,4 @@
-# 🕹️ RetroGameCloud - Documentación General del Proyecto
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# 🕹️ RetroGameCloud - Documentación general
 [![Hosted on](https://img.shields.io/badge/Hosted%20on-AWS%20EKS-orange)](https://aws.amazon.com/eks/)
 
 **RetroGameCloud** es una plataforma cloud-native para jugar juegos clásicos de DOS directamente en tu navegador, construida con prácticas modernas de DevOps, arquitectura de microservicios unificada y orquestación en Kubernetes.
