@@ -224,7 +224,7 @@ Terraform + ArgoCD + Monitoring para crear y gestionar el cluster EKS.
 ---
 
 ### 6️⃣ Documentación (`/docs`)
-Documentación profesional con Mintlify (repositorio separado).
+Documentación con Mintlify (repositorio separado).
 
 - **Tecnología:** Mintlify (MDX)
 - **Contenido:** Arquitectura, API reference, guías de desarrollo, operaciones
@@ -376,7 +376,7 @@ kubectl logs -n retrogame -l app=backend -f
 | **Kong** | Gateway, rutas, plugins, configuración | [`README`](https://github.com/retrogamecloud/kong/blob/main/README.md) |
 | **Kubernetes** | Manifiestos, ArgoCD, despliegue, rollback | [`README`](https://github.com/retrogamecloud/kubernetes/blob/main/README.md) / [`Workflows`](https://github.com/retrogamecloud/kubernetes/blob/main/.github/README-WF.md) |
 | **Infrastructure** | Terraform, AWS, monitoreo, costos | [`README`](https://github.com/retrogamecloud/infrastructure/blob/main/README.md) / [`Workflows`](https://github.com/retrogamecloud/infrastructure/blob/main/.github/README-WF.md) |
-| **Profesional** | API docs, arquitectura, guías DevOps | [`https://www.retrogamehub.games/wiki`](https://www.retrogamehub.games/wiki) |
+| **Profesional** | API docs, arquitectura, guías DevOps | [`https://retrogamecloud.mintlify.app/`](https://retrogamecloud.mintlify.app/) |
 | **Testing** | Estrategia de testing en cada repo | `/{repo}/tests/README.md` |
 | **Secretos** | Estrategia de manejo de secretos | [`SECRETS-STRATEGY`](https://github.com/retrogamecloud/docs/blob/main/SECRETS-STRATEGY.md) |
 
@@ -600,7 +600,7 @@ RetroGameCloud maneja múltiples secretos en diferentes niveles. **Nunca commite
 ## Enlaces Útiles
 
 - **Aplicación:** https://retrogamehub.games
-- **Documentación:** https://www.retrogamehub.games/wiki
+- **Documentación:** https://retrogamecloud.mintlify.app/
 - **GitHub Org:** https://github.com/retrogamecloud
 
 ---
