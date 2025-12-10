@@ -1,7 +1,27 @@
 # 🕹️ RetroGameCloud - Documentación general
-[![Hosted on](https://img.shields.io/badge/Hosted%20on-AWS%20EKS-orange)](https://aws.amazon.com/eks/)
 
-**RetroGameCloud** es una plataforma cloud-native para jugar juegos clásicos de DOS directamente en tu navegador, construida con prácticas modernas de DevOps, arquitectura de microservicios unificada y orquestación en Kubernetes.
+[![Hosted on AWS EKS](https://img.shields.io/badge/Hosted%20on-AWS%20EKS-FF9900?logo=amazoneks&logoColor=white)](https://aws.amazon.com/eks/)
+[![Node.js](https://img.shields.io/badge/Node.js-20.19.5-339933?logo=node.js&logoColor=white)](https://nodejs.org/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15-4169E1?logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+[![Kubernetes](https://img.shields.io/badge/Kubernetes-1.34-326CE5?logo=kubernetes&logoColor=white)](https://kubernetes.io/)
+[![Terraform](https://img.shields.io/badge/Terraform-IaC-7B42BC?logo=terraform&logoColor=white)](https://www.terraform.io/)
+[![ArgoCD](https://img.shields.io/badge/ArgoCD-GitOps-EF7B4D?logo=argo&logoColor=white)](https://argo-cd.readthedocs.io/)
+[![Kong](https://img.shields.io/badge/Kong-API%20Gateway-003459?logo=kong&logoColor=white)](https://konghq.com/)
+[![Docker](https://img.shields.io/badge/Docker-Containers-2496ED?logo=docker&logoColor=white)](https://www.docker.com/)
+[![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-CI%2FCD-2088FF?logo=githubactions&logoColor=white)](https://github.com/features/actions)
+[![Grafana](https://img.shields.io/badge/Grafana-Monitoring-F46800?logo=grafana&logoColor=white)](https://grafana.com/)
+[![Prometheus](https://img.shields.io/badge/Prometheus-Metrics-E6522C?logo=prometheus&logoColor=white)](https://prometheus.io/)
+[![SonarCloud](https://img.shields.io/badge/SonarCloud-Quality-F3702A?logo=sonarcloud&logoColor=white)](https://sonarcloud.io/)
+
+
+**RetroGameCloud** es una plataforma cloud-native completa para jugar juegos clásicos de DOS directamente en tu navegador. El proyecto combina tecnologías modernas de desarrollo web, infraestructura como código, y orquestación de contenedores.
+
+La aplicación está desplegada sobre **Kubernetes en AWS EKS**, gestionada íntegramente mediante **Terraform** para la infraestructura y **ArgoCD** para el despliegue continuo. Siguiendo metodologías **GitOps** y **Gitflow**, cada cambio en los repositorios desencadena pipelines automatizados de CI/CD con **GitHub Actions**, incluyendo testing, análisis de calidad (SonarCloud), escaneo de seguridad (Trivy), y despliegue automático a través de sincronización declarativa.
+
+El stack de la aplicación incluye un **backend API REST** con Node.js y PostgreSQL, un **frontend** con emulador DOS.js integrado, junto a un sistema completo de **monitoreo** con Grafana y Prometheus. Al ser un proyecto educativo, el uso de los recursos equilibra los costes y la funcionalidad, diseñando y adaptando una arquitectura que no sea demasiado costosa pero garantizando unos mínimos.
+
+[![Consulta nuestra documentación en Mintlify.com](https://img.shields.io/badge/Consulta%20nuestra%20documentaci%C3%B3n%20en-Mintlify.com-4C9CF0?logo=readthedocs&logoColor=white)](https://retrogamecloud.mintlify.app/)
+[![Consulta nuestra presentación en Slides.com](https://img.shields.io/badge/Consulta%20nuestra%20presentaci%C3%B3n%20en-Slides.com-FF4081?logo=slides&logoColor=white)](https://slides.com/retrogamecloud/retrogamecloud)
 
 ---
 
@@ -21,6 +41,27 @@
 - [Estimación de Costos AWS](#estimación-de-costos-aws)
 - [Enlaces Útiles](#enlaces-útiles)
 - [Equipo](#equipo)
+
+---
+
+## 📚 Índice de README del Proyecto
+
+- 📘 [backend](https://github.com/retrogamecloud/backend/blob/main/README.md)
+  - 📋 [.github](https://github.com/retrogamecloud/backend/blob/main/.github/README-WF.md)
+  - 📝 [tests](https://github.com/retrogamecloud/backend/blob/main/tests/README.md)
+- 📗 [frontend](https://github.com/retrogamecloud/frontend/blob/main/README.md)
+  - 📋 [.github](https://github.com/retrogamecloud/frontend/blob/main/.github/README-WF.md)
+- 📙 [kong](https://github.com/retrogamecloud/kong/blob/main/README.md)
+- 📕 [kubernetes](https://github.com/retrogamecloud/kubernetes/blob/main/README.md)
+  - 📋 [.github](https://github.com/retrogamecloud/kubernetes/blob/main/.github/README-WF.md)
+- 📔 [infrastructure](https://github.com/retrogamecloud/infrastructure/blob/main/README.md)
+  - 📋 [.github](https://github.com/retrogamecloud/infrastructure/blob/main/.github/README-WF.md)
+  - 📝 [argocd](https://github.com/retrogamecloud/infrastructure/blob/main/argocd/README.md)
+  - terraform/
+    - 📝 [bootstrap](https://github.com/retrogamecloud/infrastructure/blob/main/terraform/bootstrap/README.md)
+    - 📝 [eks](https://github.com/retrogamecloud/infrastructure/blob/main/terraform/eks/README.md)
+    - 📝 [github](https://github.com/retrogamecloud/infrastructure/blob/main/terraform/github/README.md)
+- 📓 [docs](https://github.com/retrogamecloud/docs/blob/main/README.md)
 
 ---
 
@@ -51,45 +92,7 @@ RetroGameCloud consolida todo lo que necesitas para:
 
 ## Arquitectura General
 
-```
-┌─────────────────────────────────────────────────────────────────────┐
-│                        USUARIO (Browser)                            │
-│                    https://retrogamehub.games                       │
-└─────────────────────┬───────────────────────────────────────────────┘
-                      │ HTTPS (ALB + ACM Certificate)
-                      │
-    ┌─────────────────▼────────────────────┐
-    │  Kong API Gateway (Kubernetes Ingress)
-    │  Puerto 8000 - Enrutamiento + CORS   │
-    └─────┬──────────────────┬──────────────┘
-          │                  │
-          │                  ▼
-          │         ┌────────────────────┐
-          │         │ Frontend (8081)    │
-          │         │ Express + HTML/CSS │
-          │         │ Emulador jsdos.js  │
-          │         └────────────────────┘
-          │
-          ▼
-    ┌──────────────────────────────────────┐
-    │ Backend API Service (3000)           │
-    │ • Autenticación (JWT + bcrypt)       │
-    │ • Gestión de usuarios                │
-    │ • Registro de puntuaciones           │
-    │ • Rankings y estadísticas            │
-    │ • Catálogo de juegos                 │
-    └──────────────┬───────────────────────┘
-                   │
-                   ▼
-        ┌──────────────────────┐
-        │ PostgreSQL (5432)    │
-        │ • users              │
-        │ • games              │
-        │ • scores             │
-        │ • score_history      │
-        │ • user_stats         │
-        └──────────────────────┘
-```
+[![Diagrama RetroGameCloud](Diagrama%20-%20RetroGameCloud.png)](https://drive.google.com/file/d/1etPAeG28t6YKcKOv5wlC8F5EzALjWfse/view?usp=sharing)
 
 **Stack de Infraestructura:**
 - **Cloud:** AWS (eu-west-1)
@@ -224,7 +227,7 @@ Terraform + ArgoCD + Monitoring para crear y gestionar el cluster EKS.
 ---
 
 ### 6️⃣ Documentación (`/docs`)
-Documentación profesional con Mintlify (repositorio separado).
+Documentación con Mintlify (repositorio separado).
 
 - **Tecnología:** Mintlify (MDX)
 - **Contenido:** Arquitectura, API reference, guías de desarrollo, operaciones
@@ -376,7 +379,7 @@ kubectl logs -n retrogame -l app=backend -f
 | **Kong** | Gateway, rutas, plugins, configuración | [`README`](https://github.com/retrogamecloud/kong/blob/main/README.md) |
 | **Kubernetes** | Manifiestos, ArgoCD, despliegue, rollback | [`README`](https://github.com/retrogamecloud/kubernetes/blob/main/README.md) / [`Workflows`](https://github.com/retrogamecloud/kubernetes/blob/main/.github/README-WF.md) |
 | **Infrastructure** | Terraform, AWS, monitoreo, costos | [`README`](https://github.com/retrogamecloud/infrastructure/blob/main/README.md) / [`Workflows`](https://github.com/retrogamecloud/infrastructure/blob/main/.github/README-WF.md) |
-| **Profesional** | API docs, arquitectura, guías DevOps | [`https://www.retrogamehub.games/wiki`](https://www.retrogamehub.games/wiki) |
+| **Profesional** | API docs, arquitectura, guías DevOps | [`https://retrogamecloud.mintlify.app/`](https://retrogamecloud.mintlify.app/) |
 | **Testing** | Estrategia de testing en cada repo | `/{repo}/tests/README.md` |
 | **Secretos** | Estrategia de manejo de secretos | [`SECRETS-STRATEGY`](https://github.com/retrogamecloud/docs/blob/main/SECRETS-STRATEGY.md) |
 
@@ -600,7 +603,7 @@ RetroGameCloud maneja múltiples secretos en diferentes niveles. **Nunca commite
 ## Enlaces Útiles
 
 - **Aplicación:** https://retrogamehub.games
-- **Documentación:** https://www.retrogamehub.games/wiki
+- **Documentación:** https://retrogamecloud.mintlify.app/
 - **GitHub Org:** https://github.com/retrogamecloud
 
 ---
