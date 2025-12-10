@@ -92,7 +92,7 @@ RetroGameCloud consolida todo lo que necesitas para:
 
 ## Arquitectura General
 
-[![Diagrama RetroGameCloud](Diagrama%20-%20RetroGameCloud.png)](https://drive.google.com/file/d/1etPAeG28t6YKcKOv5wlC8F5EzALjWfse/view?usp=sharing)
+[![Diagrama RetroGameCloud](https://raw.githubusercontent.com/retrogamecloud/docs/main/.github/Diagrama%20-%20RetroGameCloud.png)](https://drive.google.com/file/d/1etPAeG28t6YKcKOv5wlC8F5EzALjWfse/view?usp=sharing)
 
 **Stack de Infraestructura:**
 - **Cloud:** AWS (eu-west-1)
