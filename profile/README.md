@@ -566,13 +566,13 @@ RetroGameCloud maneja múltiples secretos en diferentes niveles. **Nunca commite
 
 ### Grafana Dashboards
 
-- **URL:** https://grafana.retrogamehub.games
+- **URL:** https://retrogamehub.games/grafana/
 - **Dashboards:** Application, Infrastructure, PostgreSQL, Kong
 - **Métricas:** Prometheus scraping cada 15 segundos
 
 ### Prometheus
 
-- **URL:** https://prometheus.retrogamehub.games
+- **URL:** https://retrogamehub.games/prometheus/
 - **Retention:** 30 días
 - **Alertas:** Configuradas en AlertManager
 
