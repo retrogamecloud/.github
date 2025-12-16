@@ -22,7 +22,7 @@ El stack de la aplicación incluye un **backend API REST** con Node.js y Postgre
 
 [![Consulta nuestra documentación en Mintlify.com](https://img.shields.io/badge/Consulta%20nuestra%20documentaci%C3%B3n%20en-Mintlify.com-4C9CF0?logo=readthedocs&logoColor=white)](https://retrogamecloud.mintlify.app/)
 [![Consulta nuestra presentación en YouTube.com](https://img.shields.io/badge/Consulta%20nuestra%20presentaci%C3%B3n%20en-YouTube.com-FF0000?logo=youtube&logoColor=white)](https://youtu.be/hCEmI6w48bg)
-[Consulta nuestras diapositivas en Slides.com](https://slides.com/retrogamecloud/retrogamecloud)
+[![Consulta nuestras diapositivas en Slides.com](https://img.shields.io/badge/Consulta%20nuestras%20diapositivas%20en-Slides.com-FFA500?logo=slides&logoColor=white)](https://slides.com/retrogamecloud/retrogamecloud)
 
 ---
 
