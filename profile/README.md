@@ -20,9 +20,9 @@ La aplicación está desplegada sobre **Kubernetes en AWS EKS**, gestionada ínt
 
 El stack de la aplicación incluye un **backend API REST** con Node.js y PostgreSQL, un **frontend** con emulador DOS.js integrado, junto a un sistema completo de **monitoreo** con Grafana y Prometheus. Al ser un proyecto educativo, el uso de los recursos equilibra los costes y la funcionalidad, diseñando y adaptando una arquitectura que no sea demasiado costosa pero garantizando unos mínimos.
 
-[![Consulta nuestra documentación en Mintlify.com](https://img.shields.io/badge/Consulta%20nuestra%20documentaci%C3%B3n%20en-Mintlify.com-4C9CF0?logo=readthedocs&logoColor=white)](https://retrogamecloud.mintlify.app/)
-[![Consulta nuestra presentación en YouTube.com](https://img.shields.io/badge/Consulta%20nuestra%20presentaci%C3%B3n%20en-YouTube.com-FF0000?logo=youtube&logoColor=white)](https://youtu.be/hCEmI6w48bg)
-[![Consulta nuestras diapositivas en Slides.com](https://img.shields.io/badge/Consulta%20nuestras%20diapositivas%20en-Slides.com-FFA500?logo=slides&logoColor=white)](https://slides.com/retrogamecloud/retrogamecloud)
+[![📚 Consulta nuestra documentación en Mintlify](https://img.shields.io/badge/📚_Consulta_nuestra_documentaci%C3%B3n_en-Mintlify-4C9CF0?style=for-the-badge&logo=readthedocs&logoColor=white&labelColor=000000)](https://retrogamecloud.mintlify.app/)
+[![🎥 Consulta nuestra presentación en YouTube](https://img.shields.io/badge/🎥_Consulta_nuestra_presentaci%C3%B3n_en-YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white&labelColor=000000)](https://youtu.be/hCEmI6w48bg)
+[![📊 Consulta nuestras diapositivas en Slides](https://img.shields.io/badge/📊_Consulta_nuestras_diapositivas_en-Slides-FFA500?style=for-the-badge&logo=slides&logoColor=white&labelColor=000000)](https://slides.com/retrogamecloud/retrogamecloud)
 
 ---
 
