@@ -21,7 +21,8 @@ La aplicación está desplegada sobre **Kubernetes en AWS EKS**, gestionada ínt
 El stack de la aplicación incluye un **backend API REST** con Node.js y PostgreSQL, un **frontend** con emulador DOS.js integrado, junto a un sistema completo de **monitoreo** con Grafana y Prometheus. Al ser un proyecto educativo, el uso de los recursos equilibra los costes y la funcionalidad, diseñando y adaptando una arquitectura que no sea demasiado costosa pero garantizando unos mínimos.
 
 [![Consulta nuestra documentación en Mintlify.com](https://img.shields.io/badge/Consulta%20nuestra%20documentaci%C3%B3n%20en-Mintlify.com-4C9CF0?logo=readthedocs&logoColor=white)](https://retrogamecloud.mintlify.app/)
-[![Consulta nuestra presentación en Slides.com](https://img.shields.io/badge/Consulta%20nuestra%20presentaci%C3%B3n%20en-Slides.com-FF4081?logo=slides&logoColor=white)](https://slides.com/retrogamecloud/retrogamecloud)
+[![Consulta nuestra presentación en YouTube.com](https://img.shields.io/badge/Consulta%20nuestra%20presentaci%C3%B3n%20en-YouTube.com-FF0000?logo=youtube&logoColor=white)](https://youtu.be/hCEmI6w48bg)
+[Consulta nuestras diapositivas en Slides.com](https://slides.com/retrogamecloud/retrogamecloud)
 
 ---
 
